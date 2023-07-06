@@ -1,0 +1,38 @@
+<div class="card bg-light">
+  <div class="card-body">
+    <dl class="row">
+      <dt class="col-sm-3">Name</dt>
+      <dd class="col-sm-9">{{ planet?.name }}</dd>
+
+      <dt class="col-sm-3">Climate</dt>
+      <dd class="col-sm-9">{{ planet?.climate }}</dd>
+
+      <dt class="col-sm-3">Diameter</dt>
+      <dd class="col-sm-9">{{ planet?.diameter }}</dd>
+
+      <dt class="col-sm-3">Gravity</dt>
+      <dd class="col-sm-9">{{ planet?.gravity }}</dd>
+
+      <dt class="col-sm-3">Orbital period</dt>
+      <dd class="col-sm-9">{{ planet?.orbital_period }}</dd>
+
+      <dt class="col-sm-3">Population</dt>
+      <dd class="col-sm-9">{{ planet?.population }}</dd>
+
+      <dt class="col-sm-3">Rotation period</dt>
+      <dd class="col-sm-9">{{ planet?.rotation_period }}</dd>
+
+      <dt class="col-sm-3">Surface water</dt>
+      <dd class="col-sm-9">{{ planet?.surface_water }}</dd>
+
+      <dt class="col-sm-3">Terrain</dt>
+      <dd class="col-sm-9">{{ planet?.terrain }}</dd>
+
+      <dt class="col-sm-3">Created</dt>
+      <dd class="col-sm-9">{{ planet?.created | date }}</dd>
+
+      <dt class="col-sm-3">Edited</dt>
+      <dd class="col-sm-9">{{ planet?.edited | date }}</dd>
+    </dl>
+  </div>
+</div>

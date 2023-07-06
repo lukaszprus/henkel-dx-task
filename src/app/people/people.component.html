@@ -1,0 +1,15 @@
+<ng-container *ngIf="people?.length">
+  <app-pagination [page]="page" [pagesTotal]="pagesTotal"></app-pagination>
+
+  <div class="list-group">
+    <a [routerLink]="person.uid" class="list-group-item list-group-item-action" *ngFor="let person of people">
+      {{ person.name }}
+    </a>
+  </div>
+
+  <app-pagination [page]="page" [pagesTotal]="pagesTotal"></app-pagination>
+</ng-container>
+
+<div *ngIf="people && !people.length">
+  No items
+</div>

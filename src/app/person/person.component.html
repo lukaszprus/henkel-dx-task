@@ -1,0 +1,42 @@
+<div class="card bg-light">
+  <div class="card-body">
+    <dl class="row">
+      <dt class="col-sm-3">Name</dt>
+      <dd class="col-sm-9" data-test-name>{{ person?.name }}</dd>
+
+      <dt class="col-sm-3">Gender</dt>
+      <dd class="col-sm-9">{{ person?.gender }}</dd>
+
+      <dt class="col-sm-3">Skin color</dt>
+      <dd class="col-sm-9">{{ person?.skin_color }}</dd>
+
+      <dt class="col-sm-3">Eye color</dt>
+      <dd class="col-sm-9">{{ person?.eye_color }}</dd>
+
+      <dt class="col-sm-3">Hair color</dt>
+      <dd class="col-sm-9">{{ person?.hair_color }}</dd>
+
+      <dt class="col-sm-3">Height</dt>
+      <dd class="col-sm-9">{{ person?.height }}</dd>
+
+      <dt class="col-sm-3">Mass</dt>
+      <dd class="col-sm-9">{{ person?.mass }}</dd>
+
+      <dt class="col-sm-3">Birth year</dt>
+      <dd class="col-sm-9">{{ person?.birth_year }}</dd>
+
+      <dt class="col-sm-3">Homeworld</dt>
+      <dd class="col-sm-9">
+        <a *ngIf="person?.homeworld" [routerLink]="['/planets', person!.homeworld]">
+          {{ person!.homeworld }}
+        </a>
+      </dd>
+
+      <dt class="col-sm-3">Created</dt>
+      <dd class="col-sm-9">{{ person?.created | date }}</dd>
+
+      <dt class="col-sm-3">Edited</dt>
+      <dd class="col-sm-9">{{ person?.edited | date }}</dd>
+    </dl>
+  </div>
+</div>
